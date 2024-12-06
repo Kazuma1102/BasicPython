@@ -1,34 +1,4 @@
-#制御構文
-n=61
-D=True
-for i in range(2,n):
-    if n % i ==0: 
-               D=True
-               break
-    else :
-        D=False
-        
 
-if D:
-     print(f"{n}は素数ではありません")
-else:
-     print(f"{n}は素数です")
-n=10       
-
-
-D=True
-for i in range(2,n):
-    if n % i ==0: 
-               D=True
-               break
-    else :
-        D=False
-        
-
-if D:
-     print(f"{n}は素数ではありません")
-else:
-     print(f"{n}は素数です")
 
 #関数
 E=True
