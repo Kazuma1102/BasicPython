@@ -1,4 +1,6 @@
 #関数
+
+
 E=True
 m=61
 def is_prime(m):
