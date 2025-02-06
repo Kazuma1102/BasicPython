@@ -1,34 +1,24 @@
 #関数
 
 
-E=True
-m=61
 def is_prime(m):
-  
     if m <= 1:
         return False
-    for i in range(2, m):
+    for i in range(2, int(m**0.5) + 1): 
         if m % i == 0:
             return False
     return True
-E=is_prime(m)
-if E:
-     print(f"{m}は素数です")
-else:
-     print(f"{m}は素数ではありません")
 
-E=True
-m=10
-def is_prime(m):
-  
-    if m <= 1:
-        return False
-    for i in range(2, m):
-        if m % i == 0:
-            return False
-    return True
-E= is_prime(m)
-if E:
-     print(f"{m}は素数です")
+# 61の判定
+m = 61
+if is_prime(m):
+    print(f"{m}は素数です")
 else:
-     print(f"{m}は素数ではありません")
+    print(f"{m}は素数ではありません")
+
+# 10の判定
+m = 10
+if is_prime(m):
+    print(f"{m}は素数です")
+else:
+    print(f"{m}は素数ではありません")
